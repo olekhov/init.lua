@@ -1,4 +1,5 @@
 # Compiled Lua sources
+plugin
 luac.out
 
 # luarocks build files
