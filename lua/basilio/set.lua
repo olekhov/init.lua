@@ -4,6 +4,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.spell = true
+vim.opt.spelllang = "en,ru"
 
 vim.opt.list = true
 vim.opt.listchars = { tab = "→ ", extends = "", precedes = "", trail = "∙", eol = "" }
@@ -31,3 +32,4 @@ vim.opt.undofile = true
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+vim.opt.clipboard = "unnamedplus"
