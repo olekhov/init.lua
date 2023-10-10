@@ -1,2 +1,2 @@
 require("basilio")
-require("basilio.packer")
+require("basilio.lazy")
