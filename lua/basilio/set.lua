@@ -28,14 +28,25 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Устанавливаем табы для C++
+-- Устанавливаем табы для Rust, Python, Lua
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"rust", "json", "python", "lua"},
+  pattern = {"rust", "python", "lua"},
   callback = function()
     vim.opt_local.tabstop = 4
     vim.opt_local.expandtab = true
     vim.opt_local.shiftwidth = 4
     vim.opt_local.softtabstop = 4
+  end,
+})
+
+-- Устанавливаем табы для JS, solidity
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {"solidity", "javascript", "javascriptreact", "json", "typescript", "typescriptreact"},
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.expandtab = true
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.softtabstop = 2
   end,
 })
 

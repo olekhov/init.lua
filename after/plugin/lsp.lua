@@ -54,7 +54,7 @@ require('mason-lspconfig').setup({
             lspconfig.clangd.setup({
                 cmd = {
                     "clangd",
-                    "--log=verbose",
+                    -- "--log=verbose",
                     "-j=2"
                 }
             })
